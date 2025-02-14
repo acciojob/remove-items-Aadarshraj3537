@@ -3,5 +3,8 @@ const removeColor = () => {
     let selectedOption = select.options[select.selectedIndex];
 
     if (selectedOption) {
-        selectedOption.remove(); // Re
+        selectedOption.remove(); // Remove the selected option
+    }
+};
+
 
