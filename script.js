@@ -1,10 +1,10 @@
-const removeColor = () => {
-    let select = document.getElementById("colorSelect");
-    let selectedOption = select.options[select.selectedIndex];
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("input[type='button']").addEventListener("click", function () {
+        let select = document.getElementById("colorSelect");
 
-    if (selectedOption) {
-        selectedOption.remove(); // Remove the selected option
-    }
-};
-
+        if (select.selectedIndex !== -1) {  // Ensure an option is selected
+            select.remove(select.selectedIndex);
+        }
+    });
+});
 
