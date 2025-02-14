@@ -1,10 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("input[type='button']").addEventListener("click", function () {
-        let select = document.getElementById("colorSelect");
+//your JS code here. If required.
+let btn = document.querySelector("input[type='button']");
+	btn.addEventListener('click',()=>{
+		
+		let s = document.getElementById('colorSelect');
+		let so = s.options[s.selectedIndex];
 
-        if (select.selectedIndex !== -1) {  // Ensure an option is selected
-            select.remove(select.selectedIndex);
-        }
-    });
-});
-
+		if(so){
+			so.remove();
+		}
+})
